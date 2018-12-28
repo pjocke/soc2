@@ -9,11 +9,11 @@ import (
 func Encode(decoded string) string {
 	//var consonants = [20]byte{'B', 'C', 'D', 'F', 'G', 'H', 'J', 'K', 'L', 'M', 'N', 'P', 'Q', 'R', 'S', 'T', 'V', 'W', 'X', 'Z'}
 
-	var word = []byte(strings.ToUpper(decoded))
-	var encoded []byte
+	var word = []rune(strings.ToUpper(decoded))
+	var encoded []rune
 
 	var i int
-	var letter byte
+	var letter rune
 	fmt.Printf("%d\n", len(word))
 	for i = 0; i < len(word); i++ {
 		letter = word[i]
