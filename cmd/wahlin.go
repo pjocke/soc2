@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 
-	"github.com/pjocke/soc2/wahlin"
+	"github.com/pjocke/wahlin"
 )
 
 func main() {
