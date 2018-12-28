@@ -1,7 +1,6 @@
 package wahlin
 
 import (
-	"fmt"
 	"strings"
 )
 
@@ -19,16 +18,13 @@ func consonant(letter rune) bool {
 
 // Encode a string to its Wåhlin encoded equivalent
 func Encode(decoded string) string {
-
 	var word = []rune(strings.ToUpper(decoded))
 	var encoded []rune
 
 	var i int
 	var letter rune
-	fmt.Printf("%d\n", len(word))
 	for i = 0; i < len(word); i++ {
 		letter = word[i]
-		fmt.Printf("%q, %d, %d\n", letter, i, i+1)
 
 		if letter == 'A' {
 			// Rule set A
